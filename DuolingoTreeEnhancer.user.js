@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         Duolingo Tree Enhancer
 // @namespace    https://github.com/camiloaa/duolingotreeenhancer
-// @version      1.3.0
+// @version      1.3.0.1
 // @description  Enhance Duolingo by customizing difficulty and providing extra functionality. Based on Guillaume Brunerie's ReverseTreeEnhancer
 // @author       Camilo Arboleda
 // @match        https://www.duolingo.com/*
 // @match        https://preview.duolingo.com/*
 // @icon         https://raw.githubusercontent.com/camiloaa/duolingotreeenhancer/master/duolingo.png
 // @require      https://github.com/camiloaa/GM_config/raw/master/gm_config.js
-// @downloadURL  https://github.com/camiloaa/duolingotreeenhancer/raw/master/DuolingoTreeEnhancer.user.js
-// @updateURL    https://github.com/camiloaa/duolingotreeenhancer/raw/master/DuolingoTreeEnhancer.user.js
+// @downloadURL  https://github.com/calda/duolingotreeenhancer/raw/master/DuolingoTreeEnhancer.user.js
+// @updateURL    https://github.com/calda/duolingotreeenhancer/raw/master/DuolingoTreeEnhancer.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -202,12 +202,10 @@ function addCSSHiding(css) {
 css_style_hide_text = ` .enhancer-hide-text:not(:hover){
     background-color: #def0a5;
     color: #def0a5;
-    transition: .5s;
     flex-basis:100%
 }
 
 .enhancer-hide-text:hover {
-    transition: .5s;
     flex-basis:100%
 }
 
@@ -218,13 +216,11 @@ css_style_hide_text = ` .enhancer-hide-text:not(:hover){
 
 // The leading space is important!
 css_style_hide_pic = ` .enhancer-hide-pic:not(:hover){
-    transition: .5s;
     opacity: 0;
     flex-basis:100%
 }
 
 .enhancer-hide-pic:hover {
-    transition: .5s;
     opacity: 1;
     flex-basis:100%
 }`;
